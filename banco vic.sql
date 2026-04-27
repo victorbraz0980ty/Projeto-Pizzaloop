@@ -43,4 +43,22 @@ CREATE TABLE IF NOT EXISTS itens_pedidos (
     PRIMARY KEY (id_item),
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedidos),
     FOREIGN KEY (id_produto) REFERENCES produtos(id_Produto)
-);
+);    
+
+
+create table if not exists funcionarios(
+id_funcionarios int not null auto_increment,
+nome varchar (100) not null,
+cargo varchar (50) not null,
+login varchar (50) unique not null,
+senha_hash varchar (255) not null,
+primary key (id_funcionarios)
+);    
+
+
+create table if not exists login(
+id_login int not null auto_increment,
+email varchar (150) not null,
+senha varchar (30) not null,
+primary key (id_login)
+);  
