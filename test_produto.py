@@ -47,6 +47,7 @@ def formatar_telefone(tel):
     elif len(t) == 10: return f"({t[:2]}) {t[2:6]}-{t[6:]}"
     return t
 
+
 # =======================
 # SISTEMA PRINCIPAL (GESTAO)
 # =======================
