@@ -49,7 +49,7 @@ def formatar_telefone(tel):
 
 
 # =======================
-# SISTEMA PRINCIPAL (GESTAO)
+# TELA DO SISTEMA
 # =======================
 def iniciar_sistema():
     global root, main_frame
